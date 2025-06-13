@@ -61,6 +61,11 @@ the state machine has progressed to the logical point when those attributes are 
 
 TODO
 
+# Developing
+
+## Setup
+
+You need gradle.
 
 ## Building the Project
 
