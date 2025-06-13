@@ -18,10 +18,6 @@ dependencies {
 
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.2")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
-    
-    testImplementation(kotlin("test"))
-    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
-    testImplementation("io.mockk:mockk:1.13.9")
 }
 
 tasks.test {
@@ -34,4 +30,18 @@ kotlin {
 
 application {
     mainClass.set("MainKt")
-} 
+}
+
+testing {
+    suites {
+        val test by getting(JvmTestSuite::class) {
+            useJUnitJupiter("5.13.1") // Using JUnit Jupiter
+            dependencies {
+                implementation("org.jetbrains.kotlin:kotlin-test:1.9.22")
+                implementation("org.jetbrains.kotlin:kotlin-test-junit5:1.9.22")
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
+                implementation("io.mockk:mockk:1.13.9")
+            }
+        }
+    }
+}
