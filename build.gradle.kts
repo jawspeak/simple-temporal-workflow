@@ -4,17 +4,16 @@ plugins {
     application
 }
 
-group = "com.example"
-version = "1.0-SNAPSHOT"
+group = "xyz.block.simpletemporalworkflow"
+version = "0.1-SNAPSHOT"
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    // https://github.com/temporalio/sdk-java/releases
+    // https://github.com/temporalio/sdk-java/releases, https://central.sonatype.com/artifact/io.temporal/temporal-sdk?smo=true
     implementation("io.temporal:temporal-sdk:1.29.0")
-    implementation("io.temporal:temporal-testing:1.29.0")
 
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.2")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
@@ -29,7 +28,7 @@ kotlin {
 }
 
 application {
-    mainClass.set("MainKt")
+    mainClass.set("xyz.block.simpletemporalworkflow.MainKt")
 }
 
 testing {
@@ -41,6 +40,7 @@ testing {
                 implementation("org.jetbrains.kotlin:kotlin-test-junit5:1.9.22")
                 implementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")
                 implementation("io.mockk:mockk:1.13.9")
+                implementation("io.temporal:temporal-testing:1.29.0")
             }
         }
     }

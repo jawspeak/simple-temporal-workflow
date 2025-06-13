@@ -1,4 +1,4 @@
-package workflow
+package xyz.block.simpletemporalworkflow
 
 import io.temporal.testing.TestWorkflowEnvironment
 import io.temporal.worker.Worker
@@ -25,4 +25,4 @@ class SimpleWorkflowTest {
         
         testEnv.shutdown()
     }
-} 
+}
