@@ -65,7 +65,9 @@ TODO
 
 ## Setup
 
-You need gradle.
+You need gradle. 
+
+We also use `just` as a convenience for targets: `brew install just`, `just --list` for targets.
 
 ## Building the Project
 
