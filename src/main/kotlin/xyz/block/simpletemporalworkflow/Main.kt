@@ -1,3 +1,5 @@
+package xyz.block.simpletemporalworkflow
+
 import io.temporal.client.WorkflowClient
 import io.temporal.client.WorkflowOptions
 import io.temporal.serviceclient.WorkflowServiceStubs
@@ -6,8 +8,6 @@ import io.temporal.worker.WorkerFactory
 import kotlinx.coroutines.runBlocking
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.json.Json
-import workflow.SimpleWorkflow
-import workflow.SimpleWorkflowImpl
 
 @Serializable
 data class User(val name: String, val age: Int)
@@ -42,4 +42,4 @@ fun main() = runBlocking {
     
     val deserializedUser = Json.decodeFromString(User.serializer(), json)
     println("Deserialized user: $deserializedUser")
-} 
+}

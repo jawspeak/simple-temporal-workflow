@@ -1,3 +1,5 @@
+package xyz.block.simpletemporalworkflow
+
 import kotlinx.serialization.json.Json
 import kotlin.test.Test
 import kotlin.test.assertEquals
@@ -13,4 +15,4 @@ class MainTest {
         assertEquals("John Doe", deserializedUser.name)
         assertEquals(30, deserializedUser.age)
     }
-} 
+}
