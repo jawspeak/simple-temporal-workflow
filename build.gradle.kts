@@ -12,6 +12,10 @@ repositories {
 }
 
 dependencies {
+    // https://github.com/temporalio/sdk-java/releases
+    implementation("io.temporal:temporal-sdk:1.29.0")
+    implementation("io.temporal:temporal-testing:1.29.0")
+
     implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.2")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
     
