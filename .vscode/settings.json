@@ -1,0 +1,11 @@
+{
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 100,
+    "kotlin.languageServer.enabled": true,
+    "languageserver.kotlin": {
+        "command": "kotlin-language-server"
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit"
+    }
+}

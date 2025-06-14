@@ -65,7 +65,12 @@ TODO
 
 ## Setup
 
-You need gradle. 
+You need gradle and Kotlin.
+
+If using Cursor, install the extensions:
+- "Kotlin Language" by mathiasfrohlich
+- "Kotlin" by fwcd
+- "Code Runner" by formulahendry
 
 We also use `just` as a convenience for targets: `brew install just`, `just --list` for targets.
 

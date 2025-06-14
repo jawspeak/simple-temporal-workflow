@@ -5,7 +5,7 @@ import io.temporal.worker.Worker
 import kotlin.test.Test
 import kotlin.test.assertEquals
 
-class SimpleWorkflowTest {
+class SimpleWorkflowTest2 {
     @Test
     fun `test simple workflow execution`() {
         val testEnv = TestWorkflowEnvironment.newInstance()
