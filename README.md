@@ -65,9 +65,11 @@ TODO
 
 ## Setup
 
-You need gradle and Kotlin.
+This assumes setup on a mac. 
 
-If using Cursor, install the extensions:
+You need gradle `brew install gradle` and Kotlin. 
+
+If using Cursor, `brew install kotlin` then install the VS Code extensions:
 - "Kotlin Language" by mathiasfrohlich
 - "Kotlin" by fwcd
 - "Code Runner" by formulahendry
